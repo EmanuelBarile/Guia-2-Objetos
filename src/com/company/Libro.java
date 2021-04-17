@@ -1,23 +1,28 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class Libro {
     private String titulo;
     private double precio;
     private int stock;
+    ArrayList<Autor> autores = new ArrayList<>();
 
-    public Autor getAutor() {
-        return autor;
-    }
 
     private Autor autor;
 
     //Constructores
 
-    public Libro (String titulo, double precio, int stock, Autor autor){
+    public Libro (String titulo, double precio, int stock, ArrayList<Autor> autores){
         this.titulo=titulo;
         this.precio=precio;
         this.stock=stock;
-        this.autor=autor;
+        //this.autor=autor;
+
+        for (Autor variableAutor : autores)
+        {
+            this.autores.add(variableAutor);
+        }
 
     }
 
@@ -38,12 +43,15 @@ public class Libro {
         System.out.println("precio: "+this.getPrecio());
         System.out.println("stock: "+this.getStock());
         //libro.autor.mostrarAutor(libro.autor); consultar
-        libro.getAutor().mostrarAutor(libro.getAutor());
+        //libro.getAutor().mostrarAutor(libro.getAutor());
     }
 
-    public void mostrarAutorDesdeLibro(Libro libro){
+    public void mostrarAutores(ArrayList<Autor> autores){
 
-        libro.autor.mostrarAutor(libro.autor);
+        for (int i=0; i<autores.size();i++){
+
+            autores.get(i).mostrarAutor();
+        }
     }
 
     public Libro modificarLibro(Libro libro, double nuevoPrecio, int nuevoStock){
@@ -56,7 +64,15 @@ public class Libro {
 
     public void mensajeLibro(Libro libro){
 
-        System.out.println("El libro, {"+this.getTitulo()+"} de {"+libro.autor.getNombre()+" "+libro.autor.getApellido()+"}. Se vende a "+ this.getPrecio()+"} pesos.");
+        System.out.print("El libro, {"+this.titulo+"} de { ");
+
+        for (Autor variableAutor : autores)
+        {
+            System.out.print("["+variableAutor.getNombre()+"] ");
+
+        }
+
+        System.out.print("} tiene un precio de "+this.precio+" pesos \n");
 
     }
 

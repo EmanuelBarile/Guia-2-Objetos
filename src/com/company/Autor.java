@@ -21,12 +21,13 @@ public class Autor {
 
     //Métodos
 
-    public void mostrarAutor(Autor autor){
-        System.out.println("Autor ");
-        System.out.println("nombre: "+this.getNombre());
-        System.out.println("apellido: "+this.getApellido());
-        System.out.println("email: "+this.getEmail());
-        System.out.println("genero: "+this.getGenero());
+    public void mostrarAutor(){
+
+            System.out.println("Autor ");
+            System.out.println("nombre: "+this.nombre);
+            System.out.println("apellido: "+this.apellido);
+            System.out.println("email: "+this.email);
+            System.out.println("genero: "+this.genero);
 
     }
 
