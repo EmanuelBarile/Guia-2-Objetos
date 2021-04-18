@@ -71,7 +71,16 @@ public class Main {
         //Una vez hecho esto, imprima por pantalla el monto total de esta Factura y el
         //monto total luego de aplicarle el descuento.
 
-        Factura facturaDeCliente1= new Factura(10300,cliente1);
+        ItemVenta item1 =new ItemVenta("teclado","mecanico",5900);
+        ItemVenta item2 =new ItemVenta("monitor","curvo",29700);
+        ItemVenta item3 =new ItemVenta("parlante","edifier",7100);
+
+        ArrayList<ItemVenta> listaItems= new ArrayList<>();
+        listaItems.add(item1);
+        listaItems.add(item2);
+        listaItems.add(item3);
+
+        Factura facturaDeCliente1= new Factura(cliente1,listaItems);
 
         facturaDeCliente1.imprimirMontoTotal();
 
@@ -90,7 +99,7 @@ public class Main {
         //para que el mismo pueda almacenar múltiples Ítems de venta y a su vez
         //calcular los montos totales con y sin el descuento aplicado.
 
-
+        //Realizado , se muestra en inciso D
 
 
     }
