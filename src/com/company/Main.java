@@ -59,6 +59,37 @@ public class Main {
         //ids. Investigue la clase LocalDate y sus métodos estáticos para la generación
         //de la fecha.
 
+    //b. Cree un objeto de tipo Cliente, imprima sus detalles por pantalla. Para esto
+        //haga uso de un método que facilite la impresión del mismo.
+        //Cliente[id=?, nombre=?, email=?, descuento=?]
+
+        Cliente cliente1 = new Cliente("Dwight","DSchrute@hotmail.com",35f);
+
+        //cliente1.mostrarCliente();
+
+    //c. Cree un objeto de tipo Factura que posea al Cliente anteriormente creado.
+        //Una vez hecho esto, imprima por pantalla el monto total de esta Factura y el
+        //monto total luego de aplicarle el descuento.
+
+        Factura facturaDeCliente1= new Factura(10300,cliente1);
+
+        facturaDeCliente1.imprimirMontoTotal();
+
+        facturaDeCliente1.imprimirMontoConDescuento();
+
+    //d. Cree un método que facilite la impresión del objeto de tipo Factura y que
+        //siga el siguiente formato.
+        //Factura[id=?, fecha=?, monto=?, montoDesc=?, Cliente[id=?, nombre=?,
+        //email=?, descuento=?]]
+
+        facturaDeCliente1.mostarFactura();
+
+    //e. Analizar de agregar el tipo ItemVenta, que representa un producto que
+        //forma parte de la venta. El mismo contiene un id, un nombre, descripción y
+        //precio unitario. Considere las modificaciones necesarias en el tipo Factura
+        //para que el mismo pueda almacenar múltiples Ítems de venta y a su vez
+        //calcular los montos totales con y sin el descuento aplicado.
+
 
 
 
