@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //a. Inicialice un objeto de tipo Autor, “Joshua”, “Bloch”, “joshua@email.com”, ’M’.
+        /*//a. Inicialice un objeto de tipo Autor, “Joshua”, “Bloch”, “joshua@email.com”, ’M’.
 
         Autor autor1 = new Autor("Joshua","Bloch","joshua@email.com",'M');
         Autor autor2 = new Autor("Jesus","Christ","jc@email.com",'M');
@@ -39,16 +39,27 @@ public class Main {
 
         //libro1.mostrarAutores(autoresArreglo);
 
-    /*g. Agregue un método a la clase Libro que posibilite imprimir en pantalla el
-    siguiente mensaje:“El libro, {título} de {nombre del autor}. Se vende a {precio} pesos.”*/
+    *//*g. Agregue un método a la clase Libro que posibilite imprimir en pantalla el
+    siguiente mensaje:“El libro, {título} de {nombre del autor}. Se vende a {precio} pesos.”*//*
 
         libro1.mensajeLibro(libro1);
 
-    /*h. Modificar la clase Libro, para que acepte más de 1 Autor. Y realizar los
+    *//*h. Modificar la clase Libro, para que acepte más de 1 Autor. Y realizar los
     cambios necesarios en el método del punto g, para imprimir un nuevo
-    mensaje que liste los autores que contribuyeron a ese libro.*/
+    mensaje que liste los autores que contribuyeron a ese libro.*//*
 
         //Realizado en inciso C
+*/
+
+
+
+        //EJERCICIO 2
+
+    //a. Investigue la clase UUID y sus métodos estáticos para la generación de los
+        //ids. Investigue la clase LocalDate y sus métodos estáticos para la generación
+        //de la fecha.
+
+
 
 
     }

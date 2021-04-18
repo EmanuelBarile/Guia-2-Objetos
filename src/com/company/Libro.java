@@ -17,7 +17,6 @@ public class Libro {
         this.titulo=titulo;
         this.precio=precio;
         this.stock=stock;
-        //this.autor=autor;
 
         for (Autor variableAutor : autores)
         {
@@ -32,18 +31,10 @@ public class Libro {
 
     public void mostrarLibro( Libro libro){
         System.out.println("Libro ");
-        System.out.println("titulo: "+this.getTitulo());
-        System.out.println("precio: "+this.getPrecio());
-        System.out.println("stock: "+this.getStock());
+        System.out.println("titulo: "+this.titulo);
+        System.out.println("precio: "+this.titulo);
+        System.out.println("stock: "+this.stock);
 
-    }
-
-    public void mostrarLibroYautor( Libro libro){
-        System.out.println("titulo: "+this.getTitulo());
-        System.out.println("precio: "+this.getPrecio());
-        System.out.println("stock: "+this.getStock());
-        //libro.autor.mostrarAutor(libro.autor); consultar
-        //libro.getAutor().mostrarAutor(libro.getAutor());
     }
 
     public void mostrarAutores(ArrayList<Autor> autores){
